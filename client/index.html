@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <script src="/board.js"></script>
+        <script src="/app.js"></script>  
+    </head>
+    <body>
+        <div class = 'container'>
+            <div class = 'header'>Tic Tac Toe</div>
+            <div class = 'selection' id = 'selection'>
+                Please select
+                <div class = 'flex'>
+                    <div class = 'selection-item' onclick='selectPlayer(event)'>X</div> 
+                    <div class = 'selection-item' onclick='selectPlayer(event)'>O</div>
+                </div>
+            </div>
+            <div class = 'game' id = 'game'>
+                <div class = 'grid' onclick = 'clickHandler(event)' id = 'board'>
+                        <div class = 'position' data = '0'></div>
+                        <div class = 'position' data = '1'></div>
+                        <div class = 'position' data = '2'></div>
+                        <div class = 'position' data = '3'></div>
+                        <div class = 'position' data = '4'></div>
+                        <div class = 'position' data = '5'></div>
+                        <div class = 'position' data = '6'></div>
+                        <div class = 'position' data = '7'></div>
+                        <div class = 'position' data = '8'></div>
+                    </div>
+                    <div id = 'winner'></div>
+                    <button id = 'reset' onclick = 'resetBoard()'>Reset</button>
+            </div>
+        </div>
+    </body>
+</html>
